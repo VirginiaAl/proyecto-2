@@ -1,0 +1,21 @@
+<form action="/auth/login" method="POST">
+  <div class="field">
+    <label for="username">USERNAME:</label><br><br>
+    <input type="text" name="username">
+  </div>
+  <br><br>
+  <div class="field">
+    <label for="password">PASSWORD:</label><br><br>
+    <input type="password" name="password">
+  </div>
+  <br>
+  <div id="create">
+    <input type="submit" value="SUBMIT">
+  </div>
+  <div class="check-login">
+    <p class="account-message">
+      DO YOU HAVE AN ACCOUNT?
+      <a class="click" href="/auth/signup">CREATE AN ACCOUNT</a>
+    </p>
+  </div>
+</form>

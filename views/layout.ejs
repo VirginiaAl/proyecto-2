@@ -2,10 +2,24 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>WELCOME TO FIND-DEVELOPER! ;)</title>
+    <link rel="stylesheet" href="/public/style.css">
   </head>
   <body>
-    <%- body %>
+    <nav>
+      <a href="/">RETURN INDEX PAGE</a>
+      <% if(!user){ %>
+        <p style="color: red"><b>NO USER LOGGED</b></p>
+        <br>
+        <li><a class="login"href="/auth/signup">SIGN UP</a></li>
+        <li><a class="login"href="/auth/login"> LOGIN</a></li>
+      <% }else{ %>
+        <p style="color: green"><b>USER LOGGED: <%= user.username %></b></p>
+        <br>
+        <li><a href="/auth/logout">LOG OUT</a></li>
+      <% } %>
+    </nav>
+    <br>
+    <%- body -%>
   </body>
 </html>

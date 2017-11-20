@@ -1,0 +1,23 @@
+<div class="container">
+<h3> YOUR PROFILE</h3><br>
+
+<h5>PROJECTS FOR <%= user.username %></h5>
+      <div class="container">
+
+    <% project.forEach((project) => { %>
+        <h4>Title:<%= project.title %></h4>
+        <p>Description: <%= project.description %> </p>
+        <p>Category: <%= project.category %></p>
+        <p>Creator: <%= project.creator %></p>
+        <p>DeadLine: <%= project.deadLine %></p>
+        <p>Validations: <%= project.validations %></p>
+    <% }) %>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="center-btn">
+        <a href="../../user/<%= user._id %>/editUser">EDITAR MI USUARIO</a><br></br>
+  </div>
+  </div>
+  </div>

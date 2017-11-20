@@ -1,0 +1,35 @@
+<form action="/auth/signup" method="post" id="form-container">
+  <div>
+    <label for="username">USERNAME</label><br><br>
+    <input id="username" type="text" name="username" placeholder="userName">
+  </div>
+  <div>
+    <label for="description">DESCRIPTION</label><br><br>
+    <input id="description" type="text" name="description" placeholder="Description">
+  </div>
+  <div>
+    <label for="mail">EMAIL</label><br><br>
+    <input id="mail" type="mail" name="email" placeholder="email@email.com">
+  </div>
+  <div>
+    <label for="password">PASSWORD</label><br><br>
+    <input id="password" type="password" name="password" placeholder="Password">
+  </div>
+  <div>
+    <label for="type">TYPE USER</label><br><br>
+    <input type="radio" name="role" value="developer" checked>Developer<br>
+    <input type="radio" name="role" value="entrepeneur">Entrepeneur<br>
+    <input type="radio" name="role" value="proficient">Proficient
+  </div>
+
+  <br>
+  <div id="create">
+    <button>Crear cuenta</button>
+  </div>
+  <div>
+    <p>
+      Tienes una cuenta?
+      <a href="/auth/login"> Login</a>
+    </p>
+  </div>
+</form>
